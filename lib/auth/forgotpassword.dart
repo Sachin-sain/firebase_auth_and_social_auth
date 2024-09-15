@@ -1,9 +1,6 @@
 import 'package:firebase_practice/autscontoller/forgotcontroller.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_instance/get_instance.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
@@ -29,7 +26,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     onTap: (){
                       forgotController.forgotPassword(context);
                     },
-                    child: Text("ForgotPassword"),
+                    child: const Text("ForgotPassword"),
                   ),
 
                 )

@@ -1,9 +1,6 @@
 import 'package:firebase_practice/autscontoller/loginmobilecontroller.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_instance/get_instance.dart';
 
 class LoginWithMobile extends StatefulWidget {
   const LoginWithMobile({super.key});
@@ -27,12 +24,12 @@ class _LoginWithMobileState extends State<LoginWithMobile> {
                TextFormField(
                  controller: loginMobileController.phoneController,
                ),
-               SizedBox(height: 20,),
+               const SizedBox(height: 20,),
                GestureDetector(
                  onTap: (){
                    loginMobileController.loginWithMobile(context);
                  },
-                 child: Text("Login"),
+                 child: const Text("Login"),
                )
 
              ],

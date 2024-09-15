@@ -1,15 +1,12 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:firebase_practice/auth/forgotpassword.dart';
-import 'package:firebase_practice/auth/loginusingmobile.dart';
-import 'package:firebase_practice/auth/logout.dart';
-import 'package:firebase_practice/notification/notificationpermission.dart';
-import 'package:firebase_practice/socialauth/facebookauthpage.dart';
-import 'package:firebase_practice/socialauth/googlauthpage.dart';
+import 'package:firebase_practice/reatimedatabase/getpost.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'firebase_options.dart';
+import 'firestoredatabse/firestoredatabseaddscree.dart';
+import 'firestoredatabse/firestoredatbasefetchscreen.dart';
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message)async {
   await Firebase.initializeApp();
@@ -37,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const NotificationPermission(),
+      home: const FetchData(),
     );
   }
 }

@@ -11,6 +11,7 @@ class NotificationController extends GetxController{
 
   FirebaseMessaging messaging=FirebaseMessaging.instance;
   final FlutterLocalNotificationsPlugin _flutterLocalNotificationsPlugin  = FlutterLocalNotificationsPlugin();
+  TextEditingController postController=TextEditingController();
 
 
   void requestNotificationPermission(BuildContext context)async{
@@ -33,6 +34,7 @@ class NotificationController extends GetxController{
 
 
   }
+
 
   getDeviceToken( BuildContext context)async{
     if (kDebugMode) {

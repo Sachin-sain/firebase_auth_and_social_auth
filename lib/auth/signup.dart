@@ -24,16 +24,16 @@ class _SignUpState extends State<SignUp> {
              TextFormField(
                controller:signUpController.emailController ,
              ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               TextFormField(
                 controller: signUpController.passwordController,
               ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               GestureDetector(
                 onTap: (){
                   signUpController.signUp(context);
                 },
-                child: Text("Submit"),
+                child: const Text("Submit"),
               )
             ],
           ),

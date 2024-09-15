@@ -32,10 +32,10 @@ class _NotificationPermissionState extends State<NotificationPermission> {
           children: [
             GestureDetector(
            onTap:(){
-           Get.to(MessageScreen(id: '',));
+           Get.to(const MessageScreen(id: '',));
             },
               
-                child: Text("Notification Permission Page")),
+                child: const Text("Notification Permission Page")),
           ],
         ),
       ),

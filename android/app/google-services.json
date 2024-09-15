@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "738284489520",
+    "firebase_url": "https://fir-practice-98a54-default-rtdb.firebaseio.com",
     "project_id": "fir-practice-98a54",
     "storage_bucket": "fir-practice-98a54.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.firebase_practice"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "738284489520-2qlbqulc5ts29tevqs3e1dlds3hp28k7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_practice",
+            "certificate_hash": "37e99705d61b988afe802d31a0707785b02bcab5"
+          }
+        },
+        {
+          "client_id": "738284489520-hru468h27r0d7k45do3c6gsk49rf0hsc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCufAbOwP2miKEV15-FMsgawSmD-quKZRo"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738284489520-hru468h27r0d7k45do3c6gsk49rf0hsc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

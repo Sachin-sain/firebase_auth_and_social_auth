@@ -24,16 +24,16 @@ class _LoginPageState extends State<LoginPage> {
                TextFormField(
                  controller:loginController.emailController ,
                ),
-               SizedBox(height: 20,),
+               const SizedBox(height: 20,),
                TextFormField(
                  controller: loginController.passwordController,
                ),
-               SizedBox(height: 20,),
+               const SizedBox(height: 20,),
                GestureDetector(
                  onTap: (){
                 loginController.login(context);
                  },
-                 child: Text("Submit"),
+                 child: const Text("Submit"),
                )
              ],
            ),
